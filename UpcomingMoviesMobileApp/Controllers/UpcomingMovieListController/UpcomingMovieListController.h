@@ -1,0 +1,14 @@
+//
+//  UpcomingMovieListController.h
+//  UpcomingMoviesMobileApp
+//
+//  Created by Ali Ehsan on 10/27/16.
+//  Copyright © 2016 TkXel. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "BaseMovieListController.h"
+
+@interface UpcomingMovieListController : BaseMovieListController
+
+@end

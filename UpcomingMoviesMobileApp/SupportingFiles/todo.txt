@@ -1,0 +1,41 @@
+- Remove extra fonts
+- Clean MovieGroup (Done)
+- MR_findFirstByAttribute property fix (Done)
+{
+errors: [
+"page must be greater than 0"
+]
+} (Done)
+
+- Correct autolayout constraint (Done)
+- Add lazy loading of images (Done)
+- Clear all warnings
+- Stop API call at max page (Done)
+- Remember page number loaded and store it. When in offline mode and then online we will send that page number. Store page number in nsuser defaults (Done)
+- DONT SORT (Will have to. Client requirment.)
+- ISSUE, THE API DOES NOT RETURN SORTED RESULTS, THIS MEANS THAT THE USER WILL FEEL A JERK WHEN NEW ITEMS ARE LOADED (Add a comment)
+- Hold the screen when data is refreshing (Done)
+- Whether to lazy load when filtering? No lazy load when filtering. (Done)
+
+
+- Genres and release date should be in seperate lines (Done)
+- Overview text wrap correction (Done)
+- Insani Place holder (Done)
+- When scroll hide keyboard (Done)
+- Change the style of "Search from Data Base" button (Its native)
+- Change the name of "Search from Data Base" (Done)
+- Global search bar should be a little low (Done)
+- Click on global search results (Done)
+- Hide keyboard in global search (Done)
+- Refreshing not working in global search (Done)
+- Color of search bar color (Done)
+- Change cell size if required (Not required)
+- Splash screen (Done)
+- Apple standard commenting
+- iPad testing (Done)
+- Sectioning date wise (Done)
+- Search add in cell "Can't find it here? Search online." (Done)
+- Correction in overview (Done)
+
+
+
