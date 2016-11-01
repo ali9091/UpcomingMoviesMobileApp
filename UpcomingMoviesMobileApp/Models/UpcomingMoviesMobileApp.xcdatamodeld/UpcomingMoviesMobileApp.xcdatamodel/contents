@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="BaseEntity" representedClassName="BaseEntity" syncable="YES"/>
+    <entity name="Genre" representedClassName="Genre" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="genreID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <relationship name="movies" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Movie" inverseName="genres" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <entity name="Movie" representedClassName="Movie" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="adult" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="adult"/>
+            </userInfo>
+        </attribute>
+        <attribute name="backdropPath" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="backdrop_path"/>
+            </userInfo>
+        </attribute>
+        <attribute name="genreIDs" optional="YES" attributeType="Transformable" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="genre_ids"/>
+            </userInfo>
+        </attribute>
+        <attribute name="movieID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="originalLanguage" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="original_language"/>
+            </userInfo>
+        </attribute>
+        <attribute name="originalTitle" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="original_title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="overview"/>
+            </userInfo>
+        </attribute>
+        <attribute name="popularity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="popularity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="posterPath" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="poster_path"/>
+            </userInfo>
+        </attribute>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="dateFormat" value="yyyy-MM-dd"/>
+                <entry key="mappedKeyName" value="release_date"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="video"/>
+            </userInfo>
+        </attribute>
+        <attribute name="voteAverage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="vote_average"/>
+            </userInfo>
+        </attribute>
+        <attribute name="voteCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="vote_count"/>
+            </userInfo>
+        </attribute>
+        <relationship name="genres" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Genre" inverseName="movies" inverseEntity="Genre" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BaseEntity" positionX="-65" positionY="-153" width="128" height="45"/>
+        <element name="Genre" positionX="-45" positionY="18" width="128" height="90"/>
+        <element name="Movie" positionX="-63" positionY="-18" width="128" height="270"/>
+    </elements>
+</model>
